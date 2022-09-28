@@ -4,10 +4,16 @@ class Anime{
     private boolean diasAtuais;
     private int ano;
 
-    Anime(){
+    public Anime(){
         nome = "";
         diasAtuais = false;
         ano = 0;
+    }
+
+    public Anime( string nome, boolean diasAtuais, int ano ){
+        this.nome = nome;
+        this.diasAtuais = diasAtuais;
+        this.ano = ano;
     }
     
     public string getNome(){
@@ -26,7 +32,7 @@ class Anime{
         this.nome = nome;
     }
 
-    public void setDiasAtuais( boolean _diasAtuais ){
+    public void setDiasAtuais( boolean diasAtuais ){
         this.diasAtuais = diasAtuais;
     }
     
@@ -36,8 +42,8 @@ class Anime{
 
     public void estaAtivoHoje(){
         if( diasAtuais )
-        //println("O anime está sendo produzido nos dias atuais!\n");
+            System.out.println("O anime está sendo produzido nos dias atuais!\n");
         else
-        //println("não está!");
+            system.out.println("O anime não está sendo produzido nos dias atuais!\n");
     }
 }
