@@ -1,6 +1,7 @@
+
 class Anime{
 
-    private string nome;
+    private String nome;
     private boolean diasAtuais;
     private int ano;
 
@@ -10,13 +11,13 @@ class Anime{
         ano = 0;
     }
 
-    public Anime( string nome, boolean diasAtuais, int ano ){
+    public Anime( String nome, boolean diasAtuais, int ano ){
         this.nome = nome;
         this.diasAtuais = diasAtuais;
         this.ano = ano;
     }
     
-    public string getNome(){
+    public String getNome(){
         return nome;
     }
 
@@ -28,7 +29,7 @@ class Anime{
         return ano;
     }
 
-    public void setNome( string nome ){
+    public void setNome( String nome ){
         this.nome = nome;
     }
 
@@ -44,6 +45,6 @@ class Anime{
         if( diasAtuais )
             System.out.println("O anime está sendo produzido nos dias atuais!\n");
         else
-            system.out.println("O anime não está sendo produzido nos dias atuais!\n");
+            System.out.println("O anime não está sendo produzido nos dias atuais!\n");
     }
 }
